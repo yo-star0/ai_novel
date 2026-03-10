@@ -28,3 +28,11 @@ Thumbs.db
 # 機密設定（APIキーなど）
 .env
 *.secret
+
+# 監視デーモン状態ファイル
+.watch_state.json
+
+# 生成されたプロンプトファイル（大きいため）
+prompts/*_writing_prompt_*.md
+prompts/*_editor_review_prompt.md
+!prompts/.gitkeep
