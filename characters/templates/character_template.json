@@ -1,0 +1,215 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "アニメ化・漫画化対応 超詳細キャラクター定義テンプレート",
+    "usage": "このファイルをコピーして characters/profiles/{character_id}.json として保存する"
+  },
+
+  "id": "char_001",
+  "created_at": "",
+  "updated_at": "",
+
+  "basic": {
+    "name": {
+      "full": "",
+      "reading": "",
+      "nickname": [],
+      "alias": []
+    },
+    "role": "protagonist | deuteragonist | antagonist | support | mob",
+    "gender": "",
+    "age": {
+      "value": 0,
+      "appearance": "",
+      "note": "実年齢と外見年齢が異なる場合の注記"
+    },
+    "birthday": "",
+    "birthplace": "",
+    "current_location": "",
+    "occupation": "",
+    "affiliation": []
+  },
+
+  "appearance": {
+    "_note": "アニメーター・イラストレーターへの指示書として機能すること",
+    "height_cm": 0,
+    "weight_kg": 0,
+    "body_type": "細身 | 標準 | 筋肉質 | がっしり | ふくよか",
+    "muscle_mass": {
+      "arms": "なし | 細め | 標準 | 発達 | 非常に発達",
+      "torso": "なし | 細め | 標準 | 発達 | 非常に発達",
+      "legs": "なし | 細め | 標準 | 発達 | 非常に発達"
+    },
+    "silhouette_key": "シルエットだけで他キャラと区別できる特徴（1〜2行で）",
+    "hair": {
+      "color": "",
+      "color_code_hex": "",
+      "length": "超ショート | ショート | ミディアム | セミロング | ロング | 超ロング",
+      "style": "",
+      "texture": "直毛 | 軽いウェーブ | ウェーブ | カール | くせ毛",
+      "special_features": ""
+    },
+    "eyes": {
+      "color": "",
+      "color_code_hex": "",
+      "shape": "つり目 | たれ目 | 丸目 | 細目 | 標準",
+      "size": "大きい | 標準 | 小さい",
+      "special_features": ""
+    },
+    "face": {
+      "shape": "丸顔 | 面長 | ベース型 | 逆三角 | 卵型",
+      "notable_features": "",
+      "scars_marks": []
+    },
+    "skin": {
+      "tone": "",
+      "color_code_hex": "",
+      "texture": ""
+    },
+    "voice": {
+      "pitch": "低い | やや低い | 標準 | やや高い | 高い",
+      "tone": "柔らか | ハスキー | 澄んだ | 野太い | 軽やか",
+      "speaking_speed": "遅い | 標準 | 速い | 状況依存",
+      "voice_actor_reference": "（参考イメージ。実際の声優指定ではない）"
+    }
+  },
+
+  "costumes": {
+    "_note": "素材・縫製・汚れ方まで定義。アニメの作画コストを意識した設計を心がける",
+    "default": {
+      "name": "通常衣装",
+      "description": "",
+      "materials": [],
+      "color_palette": {
+        "primary": "",
+        "secondary": "",
+        "accent": "",
+        "notes": ""
+      },
+      "accessories": [],
+      "shoes": "",
+      "worn_state": "新品 | 使い込まれた | 傷んでいる | 汚れている",
+      "sd_prompt_keywords": []
+    },
+    "variations": []
+  },
+
+  "color_palette": {
+    "_note": "全衣装・シーンを通じた統一パレット。最大6色",
+    "colors": [],
+    "impression": "このキャラを見た時の第一印象の色のイメージ（例：夕焼けの赤と影の青）"
+  },
+
+  "psychology": {
+    "core_desire": "このキャラが最も欲しているもの（一言で）",
+    "core_fear": "このキャラが最も恐れているもの（一言で）",
+    "wound": "過去のトラウマ・傷（行動原理の根源）",
+    "belief": "世界や人間についての信念（正しいとも限らない）",
+    "ghost": "過去に囚われている幻（無意識の呪縛）",
+    "misbelief": "誤った信念（ストーリーで乗り越えるべきもの）",
+    "want": "表面的な目標（本人が意識している）",
+    "need": "本質的な成長課題（本人が気づいていない）"
+  },
+
+  "personality": {
+    "mbti": "",
+    "traits_positive": [],
+    "traits_negative": [],
+    "contradictions": "表面と内面の矛盾（キャラの奥行きの源泉）",
+    "under_stress": "ストレス下での行動パターン",
+    "decision_making": "決断のスタイル（直感型 | 分析型 | 感情型 | 優柔不断 等）"
+  },
+
+  "speech_patterns": {
+    "_note": "会話文ルールに直結する最重要定義",
+    "first_person": "一人称（俺/私/僕/あたし等）",
+    "second_person": "二人称（あなた/君/お前/貴様等）",
+    "sentence_endings": "語尾の特徴（〜だぜ/〜ですわ/〜じゃ 等）",
+    "vocabulary_level": "幼稚 | 標準 | 知的 | 専門的 | 時代がかった",
+    "catchphrase": [],
+    "forbidden_words": "このキャラが絶対に使わない言葉・表現",
+    "speech_samples": [
+      {
+        "context": "挨拶",
+        "line": ""
+      },
+      {
+        "context": "怒り",
+        "line": ""
+      },
+      {
+        "context": "悲しみ",
+        "line": ""
+      },
+      {
+        "context": "喜び",
+        "line": ""
+      },
+      {
+        "context": "緊張・戦闘前",
+        "line": ""
+      }
+    ]
+  },
+
+  "expressions": {
+    "_note": "アニメーターへの表情パターン指示書",
+    "default": "通常時の表情の特徴",
+    "smile": "笑顔の特徴（目が細くなる/えくぼ/等）",
+    "anger": "怒りの特徴（眉の形/目の変化/等）",
+    "sadness": "悲しみの特徴",
+    "surprise": "驚きの特徴",
+    "disgust": "嫌悪・不快の特徴",
+    "fear": "恐怖の特徴",
+    "special_expressions": []
+  },
+
+  "movement": {
+    "_note": "アニメーターへのモーション指示書",
+    "walk_style": "歩き方の特徴",
+    "combat_style": "戦闘スタイル（該当する場合）",
+    "habitual_gestures": [],
+    "movement_speed": "機敏 | 標準 | どっしり | 優雅",
+    "notable_motion": "このキャラを象徴する動き・アクション"
+  },
+
+  "abilities": {
+    "physical": [],
+    "mental": [],
+    "special": [],
+    "limitations": [],
+    "growth_potential": ""
+  },
+
+  "relationships": {
+    "_note": "物語進行に伴い更新する",
+    "connections": []
+  },
+
+  "backstory": {
+    "childhood": "",
+    "defining_event": "人生を変えた出来事",
+    "secrets": [],
+    "regrets": []
+  },
+
+  "story_arc": {
+    "initial_state": "物語冒頭での状態",
+    "goal": "物語内での目標",
+    "obstacle": "主な障害",
+    "transformation": "物語を通じた変化・成長",
+    "ending_state": "物語終盤での状態（ネタバレ注意）"
+  },
+
+  "sd_prompts": {
+    "_note": "Stable Diffusion用プロンプト定義",
+    "base_positive": "（外見の基本プロンプト）",
+    "base_negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+    "scene_variations": {
+      "portrait": "",
+      "full_body": "",
+      "action": "",
+      "emotional": ""
+    }
+  }
+}

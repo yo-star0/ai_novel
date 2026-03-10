@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "物語の全事実・伏線・キャラクター状態を追跡するトラッカー。整合性チェックエンジンのデータソース。",
+    "last_updated": "",
+    "current_chapter": 0
+  },
+
+  "timeline": [
+    {
+      "id": "event_001",
+      "chapter": 0,
+      "scene": "",
+      "date_in_story": "",
+      "description": "物語開始前の背景イベント（必要に応じて追加）",
+      "involved_characters": [],
+      "location": "",
+      "tags": ["backstory"]
+    }
+  ],
+
+  "foreshadowing": [
+    {
+      "id": "foreshadow_001",
+      "planted_chapter": 0,
+      "planted_scene": "",
+      "description": "伏線の内容",
+      "hint_text": "本文中のヒント（引用）",
+      "resolution_chapter": null,
+      "resolution_description": "",
+      "status": "planted",
+      "importance": "critical | major | minor | flavor",
+      "tags": []
+    }
+  ],
+
+  "facts": {
+    "_note": "確定した世界・キャラクターの事実。矛盾が生じてはならない。",
+    "world_facts": {},
+    "character_facts": {},
+    "ability_rules": {}
+  },
+
+  "character_states": {
+    "_note": "各キャラクターの現在の状態。章が進むたびに更新する。",
+    "_template": {
+      "location": "現在地",
+      "physical_condition": "健康 | 軽傷 | 重傷 | 死亡",
+      "emotional_state": "",
+      "knowledge": "このキャラが現在知っていること（読者との情報差）",
+      "goals_current": "現在の目標",
+      "last_seen_chapter": 0,
+      "key_items": [],
+      "relationship_changes": []
+    }
+  },
+
+  "chapter_summaries": [
+    {
+      "chapter": 0,
+      "arc": "",
+      "title": "",
+      "pov_character": "",
+      "tension_level": 0,
+      "location": "",
+      "time_in_story": "",
+      "who": [],
+      "what": "",
+      "where": "",
+      "when": "",
+      "why": "",
+      "how": "",
+      "emotional_journey": "章の感情の流れ（開始→中盤→終了）",
+      "foreshadowing_planted": [],
+      "foreshadowing_resolved": [],
+      "new_facts_established": [],
+      "continuity_notes": "次章への引き継ぎ事項",
+      "word_count": 0
+    }
+  ],
+
+  "consistency_violations": [
+    {
+      "id": "violation_001",
+      "discovered_chapter": 0,
+      "description": "矛盾の内容",
+      "conflicting_facts": [],
+      "resolution_status": "open | resolved | accepted_retcon",
+      "resolution_notes": "",
+      "discovered_at": ""
+    }
+  ],
+
+  "world_state": {
+    "current_date_in_story": "",
+    "major_events_occurred": [],
+    "ongoing_conflicts": [],
+    "political_situation": ""
+  }
+}

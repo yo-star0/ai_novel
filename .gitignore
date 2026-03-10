@@ -1,0 +1,30 @@
+# Node.js
+dashboard/node_modules/
+dashboard/.next/
+dashboard/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# 生成ファイル
+assets/images/*.png
+assets/images/*.jpg
+assets/covers/*.png
+exports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/settings.json
+.idea/
+
+# 機密設定（APIキーなど）
+.env
+*.secret

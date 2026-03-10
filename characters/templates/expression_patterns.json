@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "description": "感情・表情パターン定義テンプレート。各キャラの expression フィールドを補完する",
+    "usage": "SD プロンプトに直接組み込む感情タグとして使用"
+  },
+  "emotion_to_prompt": {
+    "joy_subtle": "slight smile, soft eyes, relaxed expression",
+    "joy_open": "bright smile, happy expression, eyes curved",
+    "joy_euphoric": "wide smile, laughing, eyes closed in joy",
+    "sadness_hidden": "forced smile, sad eyes, bittersweet expression",
+    "sadness_open": "teary eyes, sorrowful expression, downcast gaze",
+    "sadness_crying": "crying, tears streaming, red eyes",
+    "anger_cold": "cold stare, expressionless face, sharp eyes",
+    "anger_hot": "furrowed brows, gritted teeth, fierce expression",
+    "anger_rage": "blazing eyes, rage, veins showing",
+    "fear_mild": "worried expression, nervous look, eyebrows raised",
+    "fear_open": "wide eyes, pale face, fearful expression",
+    "fear_terror": "trembling, terror, mouth open",
+    "surprise_mild": "raised eyebrows, slightly open mouth",
+    "surprise_open": "wide eyes, shocked expression",
+    "disgust": "wrinkled nose, frown, distasteful expression",
+    "contempt": "smirk, one eyebrow raised, condescending look",
+    "determination": "sharp gaze, set jaw, resolute expression",
+    "confusion": "tilted head, puzzled look, furrowed brows",
+    "embarrassment": "blushing, looking away, shy expression",
+    "longing": "wistful gaze, distant expression, slight frown",
+    "pride": "confident smile, chin up, self-satisfied expression"
+  },
+  "camera_to_prompt": {
+    "close_up_emotional": "close-up face shot, cinematic",
+    "three_quarter_view": "3/4 face angle",
+    "profile": "side profile shot",
+    "from_below_imposing": "from below, low angle, imposing",
+    "from_above_vulnerable": "from above, high angle, vulnerable"
+  }
+}
