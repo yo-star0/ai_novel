@@ -6,7 +6,8 @@
  *
  * Next.js の process.cwd() は next.config.js があるディレクトリ（= dashboard/）を返すことが保証されている。
  */
-import { existsSync, join } from 'path'
+import { existsSync } from 'fs'
+import { join } from 'path'
 
 function findProjectRoot(): string {
   const candidates = [
