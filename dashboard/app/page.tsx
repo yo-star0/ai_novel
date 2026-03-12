@@ -1,4 +1,5 @@
 import { readFileSync, existsSync, readdirSync } from 'fs'
+import { join } from 'path'
 import Link from 'next/link'
 import { PROJECT_ROOT } from '@/lib/paths'
 
