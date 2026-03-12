@@ -1,7 +1,6 @@
 import { readFileSync, existsSync } from 'fs'
 import { join } from 'path'
-
-const PROJECT_ROOT = join(process.cwd(), '..')
+import { PROJECT_ROOT } from '@/lib/paths'
 
 function getTracker() {
   const trackerPath = join(PROJECT_ROOT, 'story', 'story_tracker.json')

@@ -1,8 +1,7 @@
 import { readFileSync, existsSync, readdirSync } from 'fs'
 import { join } from 'path'
 import Link from 'next/link'
-
-const PROJECT_ROOT = join(process.cwd(), '..')
+import { PROJECT_ROOT } from '@/lib/paths'
 
 function getCharacters() {
   const profilesDir = join(PROJECT_ROOT, 'characters', 'profiles')
