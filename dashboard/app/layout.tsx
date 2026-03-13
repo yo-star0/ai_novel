@@ -22,6 +22,7 @@ export default function RootLayout({
           <a href="/world" className="text-sm text-gray-400 hover:text-white transition-colors">世界観</a>
           <a href="/tracker" className="text-sm text-gray-400 hover:text-white transition-colors">伏線トラッカー</a>
           <a href="/gallery" className="text-sm text-gray-400 hover:text-white transition-colors">挿絵ギャラリー</a>
+          <a href="/settings" className="text-sm text-gray-400 hover:text-white transition-colors">設定</a>
         </nav>
         <main className="container mx-auto px-6 py-8 max-w-7xl">
           {children}
