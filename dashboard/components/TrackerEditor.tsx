@@ -44,7 +44,15 @@ export default function TrackerEditor() {
 
   useEffect(() => {
     fetch('/api/tracker').then(r => r.json()).then(data => {
-      setTracker(data)
+      const t = data.tracker || data
+      // 各配列フィールドの安全な初期化
+      setTracker({
+        timeline: Array.isArray(t.timeline) ? t.timeline : [],
+        foreshadowing: Array.isArray(t.foreshadowing) ? t.foreshadowing : [],
+        facts: (t.facts && typeof t.facts === 'object') ? t.facts : {},
+        character_states: (t.character_states && typeof t.character_states === 'object') ? t.character_states : {},
+        chapter_summaries: Array.isArray(t.chapter_summaries) ? t.chapter_summaries : [],
+      })
       setLoading(false)
     }).catch(() => setLoading(false))
   }, [])
