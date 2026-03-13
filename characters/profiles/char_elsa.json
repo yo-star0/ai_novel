@@ -1,0 +1,263 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "エルサ・フォン・ローゼン キャラクター定義",
+    "created_at": "2026-03-13",
+    "updated_at": "2026-03-13"
+  },
+
+  "id": "char_elsa",
+  "created_at": "2026-03-13",
+  "updated_at": "2026-03-13",
+
+  "basic": {
+    "name": {
+      "full": "エルサ・フォン・ローゼン",
+      "reading": "エルサ・フォン・ローゼン",
+      "nickname": ["エルサ"],
+      "alias": []
+    },
+    "role": "protagonist",
+    "gender": "女性",
+    "age": {
+      "value": 20,
+      "appearance": "18〜22歳に見える",
+      "note": "年齢より少し大人びた目をしている"
+    },
+    "birthday": "春の初め（3月頃）",
+    "birthplace": "フォン・ローゼン男爵領",
+    "current_location": "ベルンハルト公爵邸",
+    "occupation": "没落男爵令嬢 → シグヴァルトとの「契約」による公爵邸居住者",
+    "affiliation": ["フォン・ローゼン家"]
+  },
+
+  "appearance": {
+    "_note": "清楚でありながら抑えきれない色香を持つ。意識しない仕草に官能性がある。",
+    "height_cm": 163,
+    "weight_kg": 49,
+    "body_type": "細身",
+    "muscle_mass": {
+      "arms": "なし",
+      "torso": "なし",
+      "legs": "細め"
+    },
+    "silhouette_key": "細い腰から広がるスカートのシルエット。伏し目がちに立つ姿が独特。亜麻色の豊かな髪が風に揺れる。",
+    "hair": {
+      "color": "亜麻色（淡い金と小麦色の混じり）",
+      "color_code_hex": "#C8A97E",
+      "length": "セミロング",
+      "style": "緩やかに波打つ。普段は後ろで緩くまとめ、数本の後れ毛が頬を縁取る。",
+      "texture": "軽いウェーブ",
+      "special_features": "光の当たり方で金色に輝く。シグヴァルトが密かに執着する部位。"
+    },
+    "eyes": {
+      "color": "碧眼（深い青緑色）",
+      "color_code_hex": "#4A8B7C",
+      "shape": "たれ目",
+      "size": "大きい",
+      "special_features": "意志の強さと傷つきやすさが同居する瞳。感情が動くと瞳が揺れる。恐怖を隠そうとするとき逆に目が大きくなる。"
+    },
+    "face": {
+      "shape": "卵型",
+      "notable_features": "高い頬骨、柔らかな輪郭。笑うとえくぼができる。感情が顔に出やすい。",
+      "scars_marks": []
+    },
+    "skin": {
+      "tone": "磁器のような白い肌。血が上ると頬から首まで赤く染まる。",
+      "color_code_hex": "#F5EBE0",
+      "texture": "滑らか。労働の痕はほとんどないが、庭仕事をする指先はわずかに荒れている。"
+    },
+    "voice": {
+      "pitch": "やや高い",
+      "tone": "澄んだ",
+      "speaking_speed": "標準（緊張すると早くなる）",
+      "voice_actor_reference": "落ち着いた清楚系だが、追い詰められると声が震える"
+    }
+  },
+
+  "costumes": {
+    "_note": "没落貴族の令嬢。質素だが手入れが行き届いている。公爵邸移住後は豪華な衣装を与えられるが、最初は戸惑う。",
+    "default": {
+      "name": "没落令嬢時代の普段着",
+      "description": "薄い水色のドレス。素材は上質だが流行より数年遅れている。白いエプロン。繕いの跡がある。",
+      "materials": ["綿", "麻"],
+      "color_palette": {
+        "primary": "#B8D4E8",
+        "secondary": "#FFFFFF",
+        "accent": "#C8A97E",
+        "notes": "清楚・清貧のイメージ"
+      },
+      "accessories": ["亡き母から受け継いだ銀のロケット（内側に家族の絵）"],
+      "shoes": "黒い革靴。踵が少し磨り減っている。",
+      "worn_state": "使い込まれた",
+      "sd_prompt_keywords": ["light blue dress", "white apron", "modest clothing", "worn but clean"]
+    },
+    "variations": [
+      {
+        "name": "公爵邸での正装",
+        "description": "シグヴァルトが誂えた深紅のドレス。肩が露わになり、胸元に繊細なレース。エルサには艶やかすぎると感じるが、着ると美しく映える。",
+        "materials": ["絹", "レース", "ビロード"],
+        "color_palette": {
+          "primary": "#8B0000",
+          "secondary": "#F5EBE0",
+          "accent": "#FFD700",
+          "notes": "所有の色。赤は彼女をシグヴァルトのものとして示す無言のメッセージ。"
+        },
+        "accessories": ["紅玉の耳飾り（シグヴァルトから）", "細い金のブレスレット"],
+        "shoes": "赤いヒール。慣れていないため歩き方がぎこちない。",
+        "worn_state": "新品",
+        "sd_prompt_keywords": ["deep red gown", "off-shoulder", "lace details", "elegant", "uncomfortable expression"]
+      }
+    ]
+  },
+
+  "color_palette": {
+    "_note": "全衣装・シーンを通じた統一パレット",
+    "colors": ["#C8A97E（亜麻色の髪）", "#4A8B7C（碧眼）", "#F5EBE0（肌）", "#B8D4E8（没落時のドレス）", "#8B0000（公爵邸でのドレス）", "#C0C0C0（母の銀のロケット）"],
+    "impression": "春の朝の靄のような淡さ——しかし深紅をまとうと、眠っていた情熱が覚醒する"
+  },
+
+  "psychology": {
+    "core_desire": "家族を守ること",
+    "core_fear": "愛する人を失うこと・自分が誰かの重荷になること",
+    "wound": "幼少期に父の事業失敗を目の当たりにし、「自分が何かしなければ」という過剰な責任感を内面化した",
+    "belief": "「誰かのために犠牲になることが、愛である」",
+    "ghost": "父を助けられなかった無力感。自分一人では何もできないという思い込み。",
+    "misbelief": "「自分の幸福は他者の幸福より後回しにすべきだ」",
+    "want": "実家の借金を完済し、家族を安心させること",
+    "need": "自分自身の欲望と感情を認め、それを恥じずに生きること"
+  },
+
+  "personality": {
+    "mbti": "ISFJ",
+    "traits_positive": ["献身的", "芯が強い", "観察眼がある", "温かい", "誠実"],
+    "traits_negative": ["自己犠牲が過剰", "感情を抑圧する", "NOと言えない", "他者評価を気にしすぎる"],
+    "contradictions": "表面は従順に見えるが、内心では鋭く状況を分析している。シグヴァルトへの恐怖と抗えない磁力を同時に抱える。",
+    "under_stress": "無口になり、身体が強張る。しかし限界を超えると言葉が爆発する。",
+    "decision_making": "感情型——しかし感情を隠して論理的に見せようとする"
+  },
+
+  "speech_patterns": {
+    "_note": "会話文ルールに直結する最重要定義",
+    "first_person": "私",
+    "second_person": "あなた（シグヴァルトには「閣下」と呼ぶ。親密になるにつれ変化）",
+    "sentence_endings": "〜です、〜ます（丁寧語基調）。感情が高まると〜だわ、〜でしょう が混じる。",
+    "vocabulary_level": "標準（教育を受けた貴族令嬢としての語彙）",
+    "catchphrase": ["家族のために……", "わかりました（拒絶できないときの口癖）"],
+    "forbidden_words": "卑猥な言葉、侮蔑語（怒りを表すときも直接的な罵倒を避ける）",
+    "speech_samples": [
+      {
+        "context": "挨拶（公爵邸での初日）",
+        "line": "「……ベルンハルト閣下。このたびは、お招きに与り光栄です」"
+      },
+      {
+        "context": "怒り（限界のとき）",
+        "line": "「私は……私は物ではありません！」"
+      },
+      {
+        "context": "悲しみ（一人のとき）",
+        "line": "「お父様……ごめんなさい。でも、これ以外に道がなかった……」"
+      },
+      {
+        "context": "喜び（温室で花を見たとき）",
+        "line": "「まあ……こんなに綺麗な。冬なのに」"
+      },
+      {
+        "context": "緊張（シグヴァルトに近づかれたとき）",
+        "line": "「……閣下、少し、離れていただけますか」"
+      }
+    ]
+  },
+
+  "expressions": {
+    "_note": "アニメーターへの表情パターン指示書",
+    "default": "穏やかだが少し緊張している。口元は引き結ぶ癖がある。",
+    "smile": "目が細くなり、右頬にえくぼが現れる。心から笑うと声が出る。",
+    "anger": "碧眼が鋭く輝く。眉が寄る。唇を噛みしめる癖。",
+    "sadness": "瞳が揺れ、下を向く。涙をこらえるとき首が傾く。",
+    "surprise": "大きな目がさらに広がる。口が少し開く。",
+    "disgust": "眉を微妙に上げ、視線を外す。表情に出ないように制御するが、首筋に力が入る。",
+    "fear": "瞳孔が広がる。体が微かに震える。息を飲む音が聞こえる。",
+    "special_expressions": [
+      {
+        "name": "シグヴァルトへの複雑な感情",
+        "description": "恐怖と引力が同時に走るとき——目が揺れ、逸らしたいのに逸らせない。頬がわずかに染まる。"
+      },
+      {
+        "name": "覚悟を決めたとき",
+        "description": "碧眼が静かに凪ぐ。唇の力が抜け、表情が穏やかになる。矛盾した美しさ。"
+      }
+    ]
+  },
+
+  "movement": {
+    "_note": "アニメーターへのモーション指示書",
+    "walk_style": "背筋を伸ばした貴族的な歩き方。しかし緊張すると歩幅が小さくなる。",
+    "combat_style": "戦闘なし。緊急時は固まる（フリーズ反応）。",
+    "habitual_gestures": [
+      "胸元の銀のロケットを手で包む（不安・思い出すとき）",
+      "下唇を軽く噛む（言いたいことを飲み込むとき）",
+      "窓の外を見る（逃げたいとき・考えるとき）"
+    ],
+    "movement_speed": "優雅",
+    "notable_motion": "感情が高まると手が微かに震える。シグヴァルトに触れられると一瞬全身が硬直する。"
+  },
+
+  "abilities": {
+    "physical": ["刺繡（家の文様を含む高度な技術）", "ピアノ（中級程度）"],
+    "mental": ["状況分析力（表情の裏を読む）", "記憶力（感情と結びついた記憶の鮮明さ）"],
+    "special": ["10年前、瀕死のシグヴァルトを救った（詳細はArc3で判明）"],
+    "limitations": ["自己主張が極めて苦手", "体力が低い（激しい運動に不慣れ）"],
+    "growth_potential": "物語を通じ、自分の欲望を認め、主体的に選択できる女性へと変容する"
+  },
+
+  "relationships": {
+    "_note": "物語進行に伴い更新する",
+    "connections": [
+      {
+        "character_id": "char_sigvalt",
+        "type": "契約関係 → 共依存",
+        "initial_state": "恐怖と警戒",
+        "current_state": "恐怖・困惑・抗えない引力",
+        "note": "彼に触れられるたびに「慣れていく」自分を恐れている"
+      },
+      {
+        "character_id": "char_father",
+        "type": "父娘",
+        "note": "父の失敗を補おうとする過剰な責任感の源泉。父を愛しているが、いつも心配している。"
+      }
+    ]
+  },
+
+  "backstory": {
+    "childhood": "男爵家の長女として生まれ、慎ましくも愛情豊かな家庭で育つ。10代で家が傾き始め、家事・農作業も手伝うようになった。",
+    "defining_event": "10年前（10歳のとき）、戦場跡の廃墟で瀕死の少年（シグヴァルト）を発見し、村人に助けを求めた。その出来事の詳細は記憶の霧の中にある。",
+    "secrets": [
+      "シグヴァルトと10年前に接点があったことを、契約当初は覚えていない（または気づいていない）"
+    ],
+    "regrets": [
+      "もっと早く家の状況に気づけばよかった",
+      "父に「大丈夫ですよ」と嘘をついたこと"
+    ]
+  },
+
+  "story_arc": {
+    "initial_state": "家族のために自分を差し出す覚悟を持つが、内心は恐怖で満ちている",
+    "goal": "実家の借金返済と家族の安全確保",
+    "obstacle": "シグヴァルトの異常な執着・自分の感情の制御不能",
+    "transformation": "「誰かのために生きる」から「自分の意志で彼のそばにいることを選ぶ」へ",
+    "ending_state": "籠の中であることを知りながら、その籠を自らの巣と呼ぶ"
+  },
+
+  "sd_prompts": {
+    "_note": "Stable Diffusion用プロンプト定義",
+    "base_positive": "1girl, young woman, flaxen hair, light golden brown hair, wavy hair, semi-long hair, loose bun with stray strands, teal eyes, blue-green eyes, porcelain skin, oval face, high cheekbones, dimple, aristocratic, elegant but modest",
+    "base_negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+    "scene_variations": {
+      "portrait": "close-up, face focus, soft lighting, gentle expression, slight tension in eyes, masterpiece, best quality",
+      "full_body": "full body shot, standing, light blue dress, white apron, modest clothing, 19th century fashion, masterpiece, best quality",
+      "action": "upper body, reaching out, expression of determination mixed with fear, masterpiece, best quality",
+      "emotional": "close-up, tears in eyes, biting lower lip, conflicted expression, soft warm lighting, masterpiece, best quality"
+    }
+  }
+}

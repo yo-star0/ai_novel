@@ -1,0 +1,270 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "シグヴァルト・フォン・ベルンハルト キャラクター定義",
+    "created_at": "2026-03-13",
+    "updated_at": "2026-03-13"
+  },
+
+  "id": "char_sigvalt",
+  "created_at": "2026-03-13",
+  "updated_at": "2026-03-13",
+
+  "basic": {
+    "name": {
+      "full": "シグヴァルト・フォン・ベルンハルト",
+      "reading": "シグヴァルト・フォン・ベルンハルト",
+      "nickname": ["氷の公爵（世間の呼称）", "シグ（過去に親しかった者のみ）"],
+      "alias": []
+    },
+    "role": "deuteragonist",
+    "gender": "男性",
+    "age": {
+      "value": 28,
+      "appearance": "30代前半に見える（凄みがある）",
+      "note": "実年齢より老成して見えるが、エルサの前でのみ、ほんの一瞬、18歳の顔が覗く"
+    },
+    "birthday": "冬の終わり（2月頃）",
+    "birthplace": "ベルンハルト公爵領",
+    "current_location": "ベルンハルト公爵邸",
+    "occupation": "公爵・聖アステリア王国軍総帥",
+    "affiliation": ["ベルンハルト公爵家", "王国軍"]
+  },
+
+  "appearance": {
+    "_note": "見る者を圧倒する。美しさと威圧感が同居。エルサの前でのみ、ほんの僅かに「人間」が見える。",
+    "height_cm": 190,
+    "weight_kg": 85,
+    "body_type": "筋肉質",
+    "muscle_mass": {
+      "arms": "発達",
+      "torso": "発達",
+      "legs": "発達"
+    },
+    "silhouette_key": "長身で隙のない姿勢。軍服の肩章が際立つ広い肩。漆黒の髪と軍刀の組み合わせ。どの角度から見ても「隙がない」。",
+    "hair": {
+      "color": "漆黒",
+      "color_code_hex": "#0D0D0D",
+      "length": "ショート",
+      "style": "オールバック気味に流してあるが、微妙に前髪が額に落ちる。入浴後はこれが乱れ、エルサだけが見る素顔に近い姿になる。",
+      "texture": "直毛",
+      "special_features": "疲労時や感情が揺れたとき、一本の前髪が眉間に落ちる。"
+    },
+    "eyes": {
+      "color": "銀眼（月光のような冷たい銀灰色）",
+      "color_code_hex": "#A8A8B8",
+      "shape": "細目",
+      "size": "標準",
+      "special_features": "感情を映さない鏡のような瞳。しかしエルサを見るときだけ、瞳の奥に微かな光が宿る——それを本人は自覚していない。"
+    },
+    "face": {
+      "shape": "逆三角",
+      "notable_features": "彫刻のような顎のライン。高い鼻梁。笑わない。笑ったことがないわけではないが、軍総帥になってから笑顔を封印した。",
+      "scars_marks": [
+        {
+          "location": "左の鎖骨から肩にかけて",
+          "origin": "10年前の戦場での致命傷の跡。エルサが助けた夜の傷。"
+        }
+      ]
+    },
+    "skin": {
+      "tone": "日焼けした白皙。健康的だが、暖かみはない。",
+      "color_code_hex": "#D4BFA0",
+      "texture": "引き締まっている。傷跡がいくつかある。"
+    },
+    "voice": {
+      "pitch": "低い",
+      "tone": "野太い",
+      "speaking_speed": "遅い（一言一言が命令のように重い）",
+      "voice_actor_reference": "低く、静かで、言葉が少ない。しかし一言ごとに有無を言わさぬ重力がある"
+    }
+  },
+
+  "costumes": {
+    "_note": "常に完璧に整えられている。乱れは弱さの証明だと信じている。",
+    "default": {
+      "name": "軍服（正装）",
+      "description": "黒を基調とした軍服。金の肩章・胸の勲章リボン。首元まで閉じたハイカラー。軍刀を佩刀。",
+      "materials": ["上質なウール", "金糸刺繡", "革"],
+      "color_palette": {
+        "primary": "#1A1A1A",
+        "secondary": "#2C2C2C",
+        "accent": "#B8860B",
+        "notes": "支配の色。黒と金。彼の存在そのものが権力を体現する。"
+      },
+      "accessories": ["軍刀（家家紋入り）", "懐中時計（銀製）"],
+      "shoes": "黒い革のブーツ。踵が鳴る音がシグヴァルトの接近を告げる。",
+      "worn_state": "新品（常に完璧に手入れされている）",
+      "sd_prompt_keywords": ["military uniform", "black coat", "gold epaulettes", "medals", "sword at hip", "tall collar", "aristocratic"]
+    },
+    "variations": [
+      {
+        "name": "私室での着流し（エルサのみが見る姿）",
+        "description": "シャツを緩め、上着を脱いだ姿。首元が開き、左肩の傷跡が見える。この姿のシグヴァルトは「人間」に近い。",
+        "materials": ["白の細麻布シャツ"],
+        "color_palette": {
+          "primary": "#F8F8F8",
+          "secondary": "#1A1A1A",
+          "accent": "",
+          "notes": "鎧を脱いだ状態。エルサの前でのみ。"
+        },
+        "accessories": [],
+        "shoes": "素足または軟らかい室内靴",
+        "worn_state": "使い込まれた",
+        "sd_prompt_keywords": ["white shirt", "unbuttoned collar", "casual", "vulnerable expression", "scar on shoulder"]
+      }
+    ]
+  },
+
+  "color_palette": {
+    "_note": "全衣装・シーンを通じた統一パレット",
+    "colors": ["#0D0D0D（漆黒の髪）", "#A8A8B8（銀眼）", "#D4BFA0（肌）", "#1A1A1A（軍服）", "#B8860B（金の装飾）", "#8B0000（内面の情熱・エルサへの執着色）"],
+    "impression": "真夜中の黒と月の銀——冷徹だが、その奥に溶岩のような熱を隠している"
+  },
+
+  "psychology": {
+    "core_desire": "エルサを完全に所有すること——そして彼女だけに「生きている」と感じること",
+    "core_fear": "エルサを再び失うこと（10年前の「あの夜」を繰り返すこと）",
+    "wound": "幼少期から感情表出を禁じられた貴族教育。10年前の戦場での致命傷と、見知らぬ少女（エルサ）に命を救われた屈辱と感謝の交錯が、彼の人格を決定的に歪めた。",
+    "belief": "「感情は弱さだ。しかし彼女への執着だけは、制御できない——それが唯一の『生』の証明だ」",
+    "ghost": "10年前に助けられたあの夜。目を開けたとき、霞む視界に見えた亜麻色の髪と碧眼。それ以来、無意識にその顔を探し続けていた。",
+    "misbelief": "「愛するとは管理することだ。彼女が自由であれば、また失う」",
+    "want": "エルサを公爵邸に囲い込み、誰にも触れさせないこと",
+    "need": "エルサに「守られた」弱い自分を認め、彼女の意志を尊重すること"
+  },
+
+  "personality": {
+    "mbti": "INTJ",
+    "traits_positive": ["知性的", "決断が速い", "一度決めたことは必ず成し遂げる", "エルサに対してのみ忍耐強い"],
+    "traits_negative": ["支配的", "感情表出ができない", "執着が異常な領域に達している", "他者への共感が薄い（エルサ以外）"],
+    "contradictions": "「感情は不要」と口では言いながら、エルサに関することにのみ異常な感情的反応を示す。冷徹な軍総帥が、彼女の靴のサイズを把握している。",
+    "under_stress": "より静かになる。言葉が少なくなる。しかし行動は激化する（エルサへの管理が強まる）。",
+    "decision_making": "分析型——ただしエルサに関することは直感型になる"
+  },
+
+  "speech_patterns": {
+    "_note": "会話文ルールに直結する最重要定義",
+    "first_person": "私（公の場）／俺（エルサと二人のとき・感情が動いたとき）",
+    "second_person": "エルサ（名前で呼ぶ。苗字では呼ばない。これは彼にとって最大の親密さの表現）",
+    "sentence_endings": "断定形・命令形が多い。疑問形はほとんど使わない。「〜しろ」「〜だ」「〜ない」",
+    "vocabulary_level": "知的・専門的（軍事・法律・政治の語彙が混じる）",
+    "catchphrase": ["逃げられない", "お前は私のものだ", "——面白い"],
+    "forbidden_words": "「すまない」「助けてくれ」「怖い」（これらを言えない——言わないのではなく、言語化できない）",
+    "speech_samples": [
+      {
+        "context": "エルサとの初対面（契約の夜）",
+        "line": "「フォン・ローゼン令嬢。契約書に署名しろ。お前の家族は明日から安全だ」"
+      },
+      {
+        "context": "怒り（誰かがエルサに近づいたとき）",
+        "line": "「……誰が触れることを許可した」"
+      },
+      {
+        "context": "（エルサへの）珍しい感情の吐露",
+        "line": "「消えるな。——私の前から」"
+      },
+      {
+        "context": "支配の確認",
+        "line": "「逃げ場はない。それを自覚しろ。そして——安心しろ」"
+      },
+      {
+        "context": "過去の示唆（Arc3）",
+        "line": "「お前は知らないだろうが……私は一度、お前に命を拾われている」"
+      }
+    ]
+  },
+
+  "expressions": {
+    "_note": "アニメーターへの表情パターン指示書。基本的に無表情だが、微細な変化が全てを語る。",
+    "default": "完璧に無表情。銀眼は鏡のように周囲を反射するだけ。",
+    "smile": "口角がほんの僅かに上がるだけ。目は笑わない。これが彼の最大の笑顔。エルサのみが「笑った」と気づける。",
+    "anger": "表情は変わらないが、温度が下がる。声のトーンが一段落ちる。眼が鋭くなる。周囲の人間は「何かまずいことが起きた」と本能的に察する。",
+    "sadness": "ない（表に出さない）。ただし、一人のとき、エルサがいない部屋で窓の外を見る——その横顔にだけ、わずかに疲労が滲む。",
+    "surprise": "瞬きの回数が増える。これだけ。",
+    "disgust": "視線を外す。それだけで相手は会話を打ち切る。",
+    "fear": "存在しない——少なくとも本人はそう思っている。ただし「エルサが消える夢」を見たあとの朝は、珍しく動作に僅かな乱れが生じる。",
+    "special_expressions": [
+      {
+        "name": "エルサを見るときの「執着の目」",
+        "description": "銀眼の奥に、わずかだが確かな熱が灯る。エルサはこれを「怖い」と感じるが、その眼から目が離せない。"
+      },
+      {
+        "name": "触れる直前の静止",
+        "description": "エルサに手を伸ばす直前、一瞬動きが止まる。まるで許可を求めているようだが、許可は求めない。"
+      }
+    ]
+  },
+
+  "movement": {
+    "_note": "軍人の動き。無駄がない。しかしエルサへの所作は異様に丁寧。",
+    "walk_style": "軍人の正確な歩幅。踵が石床を叩く音が先触れになる。",
+    "combat_style": "剣術・近接戦のいずれも最高水準。戦場では別人のように動く。",
+    "habitual_gestures": [
+      "手を後ろで組む（思考中・待機中）",
+      "エルサの髪に触れる（最も素直な愛情表現——本人は「確認行動」だと思っている）",
+      "懐中時計を開いて閉じる（苛立ちを制御するとき）"
+    ],
+    "movement_speed": "どっしり",
+    "notable_motion": "エルサが困っているとき、言葉なく側に立つ——これが彼なりの「傍にいる」という意思表示。"
+  },
+
+  "abilities": {
+    "physical": ["剣術（王国最高位）", "馬術", "格闘"],
+    "mental": ["戦略立案", "政治・外交交渉", "情報収集・諜報ネットワークの運用"],
+    "special": [
+      "エルサに関する情報を完璧に把握・記憶する能力（靴のサイズ・食事の好み・睡眠時間・体調の微細な変化まで）",
+      "王国の諜報網を私的に活用できる"
+    ],
+    "limitations": [
+      "エルサに関することで判断が歪む",
+      "感情を言語化できない——傷つけたくないのに、傷つける方法しか知らない"
+    ],
+    "growth_potential": "物語を通じ、支配ではなく「選ばれる」ことの意味を理解するようになる"
+  },
+
+  "relationships": {
+    "_note": "物語進行に伴い更新する",
+    "connections": [
+      {
+        "character_id": "char_elsa",
+        "type": "執着・所有 → 共依存・愛",
+        "initial_state": "10年間探し続けた対象への狂信的な独占欲",
+        "current_state": "「手に入れた」という安堵と、それでも足りないという渇望",
+        "note": "彼女の恐怖を見るとき、部分的に罪悪感を覚えるが、それでも手放せない"
+      }
+    ]
+  },
+
+  "backstory": {
+    "childhood": "ベルンハルト公爵家の跡取りとして生まれ、幼少期から感情を封じる貴族教育を受けた。父は厳格な軍人。母は早くに他界。「感情は恥だ」という信念を刷り込まれた。",
+    "defining_event": "18歳のとき、辺境の紛争地帯で致命傷を負い、廃墟で意識を失った。目覚めたとき、亜麻色の髪と碧眼の少女がいた——その後、彼女は消えていた。その顔を10年間探し続けた。",
+    "secrets": [
+      "エルサとの契約は偶然ではない。エルサの家の財政状況を意図的に追跡し、最も弱ったタイミングで接触した",
+      "エルサが「10年前の少女」だと確信している（Arc3まで秘匿）"
+    ],
+    "regrets": [
+      "あの夜、名前を聞けなかったこと",
+      "探している間、彼女の家を追い詰めてしまった可能性があること（経済的圧力を知らずにかけていた）"
+    ]
+  },
+
+  "story_arc": {
+    "initial_state": "10年間探した対象を手に入れた達成感と、さらに深い渇望の共存",
+    "goal": "エルサを完全に自分のものにすること",
+    "obstacle": "エルサの拒絶・自分の感情の制御不能・政争",
+    "transformation": "「手に入れる」から「選ばれる」ことを望むようになる",
+    "ending_state": "彼女が自ら籠に戻ることを選んだと知り、初めて笑う"
+  },
+
+  "sd_prompts": {
+    "_note": "Stable Diffusion用プロンプト定義",
+    "base_positive": "1man, tall man, black hair, silver eyes, grey eyes, sharp face, strong jaw, military uniform, black coat, gold epaulettes, aristocratic, imposing, cold expression, handsome",
+    "base_negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
+    "scene_variations": {
+      "portrait": "close-up, face focus, cold expression, silver eyes glowing subtly, dramatic side lighting, masterpiece, best quality",
+      "full_body": "full body shot, military uniform, sword at hip, standing straight, imposing posture, dark background, masterpiece, best quality",
+      "action": "reaching toward viewer, close-up of hand, silver eyes intense, dark atmosphere, masterpiece, best quality",
+      "emotional": "slight softening of expression, looking at someone off-frame, hint of warmth in silver eyes, rare moment, masterpiece, best quality"
+    }
+  }
+}

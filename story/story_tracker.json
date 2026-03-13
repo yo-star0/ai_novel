@@ -2,99 +2,186 @@
   "_meta": {
     "version": "1.0",
     "description": "物語の全事実・伏線・キャラクター状態を追跡するトラッカー。整合性チェックエンジンのデータソース。",
-    "last_updated": "",
-    "current_chapter": 0
+    "last_updated": "2026-03-13",
+    "current_chapter": 1
   },
 
   "timeline": [
     {
-      "id": "event_001",
+      "id": "event_000",
       "chapter": 0,
       "scene": "",
-      "date_in_story": "",
-      "description": "物語開始前の背景イベント（必要に応じて追加）",
-      "involved_characters": [],
-      "location": "",
-      "tags": ["backstory"]
+      "date_in_story": "10年前（物語現在より10年前）",
+      "description": "18歳のシグヴァルトが辺境紛争地帯で致命傷を負い廃墟で意識を失う。10歳のエルサが発見し、村人に助けを求めた。シグヴァルトが意識を取り戻したとき、亜麻色の髪の少女の姿はなかった。",
+      "involved_characters": ["char_sigvalt", "char_elsa"],
+      "location": "辺境・廃墟（詳細未確定）",
+      "tags": ["backstory", "critical", "arc3_reveal"]
+    },
+    {
+      "id": "event_001",
+      "chapter": 1,
+      "scene": "冒頭",
+      "date_in_story": "物語Day 0（三月・冬の終わり）",
+      "description": "エルサがシグヴァルトからの手紙を受け取り、家族の借金返済と引き換えに公爵邸へ赴くことを決意する",
+      "involved_characters": ["char_elsa"],
+      "location": "フォン・ローゼン男爵邸",
+      "tags": ["story_start", "arc1"]
+    },
+    {
+      "id": "event_002",
+      "chapter": 1,
+      "scene": "応接間",
+      "date_in_story": "物語Day 0（夜）",
+      "description": "エルサとシグヴァルトが対面。契約書に署名。シグヴァルトは「逃げられないことを自覚しろ」と告げ、エルサを寝室に案内させる。指一本触れず。",
+      "involved_characters": ["char_elsa", "char_sigvalt"],
+      "location": "ベルンハルト公爵邸・応接間",
+      "tags": ["contract", "arc1", "key_scene"]
+    },
+    {
+      "id": "event_003",
+      "chapter": 1,
+      "scene": "翌朝",
+      "date_in_story": "物語Day 1（朝）",
+      "description": "エルサが朝食に自分の好物が完璧に揃っていることに気づく。シグヴァルトによる管理の初めての体感。",
+      "involved_characters": ["char_elsa", "char_sigvalt"],
+      "location": "ベルンハルト公爵邸・食堂",
+      "tags": ["control", "arc1"]
     }
   ],
 
   "foreshadowing": [
     {
       "id": "foreshadow_001",
-      "planted_chapter": 0,
-      "planted_scene": "",
-      "description": "伏線の内容",
-      "hint_text": "本文中のヒント（引用）",
-      "resolution_chapter": null,
-      "resolution_description": "",
+      "planted_chapter": 1,
+      "planted_scene": "応接間・対面シーン",
+      "description": "シグヴァルトがエルサの亜麻色の髪を、一瞬だけ静かに見つめる。10年前の記憶の断片。",
+      "hint_text": "（本文内に銀眼の視線の動きとして暗示）",
+      "resolution_chapter": 8,
+      "resolution_description": "10年前の出来事が明かされ、シグヴァルトが10年間エルサを探し続けていた理由が判明",
       "status": "planted",
-      "importance": "critical | major | minor | flavor",
-      "tags": []
+      "importance": "critical",
+      "tags": ["backstory", "arc3"]
+    },
+    {
+      "id": "foreshadow_002",
+      "planted_chapter": 1,
+      "planted_scene": "寝室・就寝前",
+      "description": "エルサの左手首に古い傷跡がある（10年前の出来事と関連）",
+      "hint_text": "（第1話ではまだ言及なし。第2話以降で描写予定）",
+      "resolution_chapter": 8,
+      "resolution_description": "10年前、エルサがシグヴァルトを救出しようとした際の傷",
+      "status": "planted",
+      "importance": "major",
+      "tags": ["backstory", "arc3"]
+    },
+    {
+      "id": "foreshadow_003",
+      "planted_chapter": 1,
+      "planted_scene": "寝室・扉の外の足音",
+      "description": "就寝前、扉の外に誰かの足音がして、そのまま去る。シグヴァルトが「確認」に来た暗示。",
+      "hint_text": "「扉が開くことはなかった。しかしその足音が、しばらくそこにあって、やがて遠ざかっていった」",
+      "resolution_chapter": 3,
+      "resolution_description": "シグヴァルトが毎夜エルサの部屋の前を確認しに来ていることが判明",
+      "status": "planted",
+      "importance": "minor",
+      "tags": ["obsession", "arc1"]
     }
   ],
 
   "facts": {
     "_note": "確定した世界・キャラクターの事実。矛盾が生じてはならない。",
-    "world_facts": {},
-    "character_facts": {},
-    "ability_rules": {}
+    "world_facts": {
+      "setting": "聖アステリア王国、19世紀欧州風架空国家、帝都ヴァレンシア",
+      "contract_law": "貴族の契約は王室公証があれば法的拘束力を持つ",
+      "noble_privilege": "五大公爵家の当主は王命なしに逮捕できない",
+      "social_norm": "淑女が男性の邸に単身居住することは公認の関係を意味する"
+    },
+    "character_facts": {
+      "elsa_age": "20歳",
+      "elsa_hair": "亜麻色、セミロング、軽いウェーブ",
+      "elsa_eyes": "碧眼（青緑）",
+      "elsa_locket": "亡き母から受け継いだ銀のロケット（家族の絵入り）を常に携帯",
+      "elsa_food_preference": "薄切りライ麦パン・ハーブ入りスクランブルエッグ・果物の甘煮（朝食）",
+      "sigvalt_age": "28歳",
+      "sigvalt_hair": "漆黒、ショート",
+      "sigvalt_eyes": "銀眼（月光色）",
+      "sigvalt_scar": "左鎖骨から肩にかけての古傷（10年前の戦傷）",
+      "sigvalt_knows_elsa_food": "エルサの食の好みを事前に把握していた（第1話・翌朝の朝食）",
+      "contract_signed": "物語Day 0の夜に契約書署名済み"
+    },
+    "ability_rules": {
+      "sigvalt_no_touch": "第1話現在、シグヴァルトはエルサに指一本触れていない（理由は未明）",
+      "sigvalt_surveillance": "エルサに関するあらゆる情報（食事の好み等）を事前に把握している"
+    }
   },
 
   "character_states": {
-    "_note": "各キャラクターの現在の状態。章が進むたびに更新する。",
-    "_template": {
-      "location": "現在地",
-      "physical_condition": "健康 | 軽傷 | 重傷 | 死亡",
-      "emotional_state": "",
-      "knowledge": "このキャラが現在知っていること（読者との情報差）",
-      "goals_current": "現在の目標",
-      "last_seen_chapter": 0,
-      "key_items": [],
-      "relationship_changes": []
+    "char_elsa": {
+      "location": "ベルンハルト公爵邸・与えられた寝室",
+      "physical_condition": "健康",
+      "emotional_state": "恐怖と覚悟の共存。疲弊しているが泣けない。シグヴァルトへの不可解さと、奇妙な「静まり」を感じている。",
+      "knowledge": "契約の条項（家族の安全保障）を把握。シグヴァルトが自分の食の好みを知っていることに気づいた（Day1朝）。籠のような格子窓に気づいた。",
+      "goals_current": "この状況を生き抜き、家族の安全を守ること",
+      "last_seen_chapter": 1,
+      "key_items": ["銀のロケット（母の形見）", "契約書（署名済み）"],
+      "relationship_changes": [
+        "シグヴァルトとの初対面。恐怖と不可解さを感じているが、「逃げられない」という言葉に奇妙な安堵を覚えた。"
+      ]
+    },
+    "char_sigvalt": {
+      "location": "ベルンハルト公爵邸",
+      "physical_condition": "健康",
+      "emotional_state": "10年間の渇望の末にエルサを手に入れた達成感と、それでも足りないという渇望。エルサの存在を確認するため毎夜部屋の前を通る。",
+      "knowledge": "エルサが10年前の少女だと確信している。彼女の家の財政状況を長期追跡し、最もタイミングを計って接触した。エルサの食の好みを含む詳細情報を把握。",
+      "goals_current": "エルサを公爵邸に留め、管理下に置くこと。逃げられないと自覚させること。",
+      "last_seen_chapter": 1,
+      "key_items": ["軍刀", "懐中時計（銀製）"],
+      "relationship_changes": [
+        "エルサを初めて直接目の前にした。10年間の渇望が達成されたが、予想より「生きた人間」だった。"
+      ]
     }
   },
 
   "chapter_summaries": [
     {
-      "chapter": 0,
-      "arc": "",
-      "title": "",
-      "pov_character": "",
-      "tension_level": 0,
-      "location": "",
-      "time_in_story": "",
-      "who": [],
-      "what": "",
-      "where": "",
-      "when": "",
-      "why": "",
-      "how": "",
-      "emotional_journey": "章の感情の流れ（開始→中盤→終了）",
-      "foreshadowing_planted": [],
+      "chapter": 1,
+      "arc": "Arc1・契約と檻",
+      "title": "契約の夜",
+      "pov_character": "char_elsa",
+      "tension_level": 6,
+      "location": "フォン・ローゼン男爵邸（冒頭）→ ベルンハルト公爵邸",
+      "time_in_story": "Day 0（夜）〜 Day 1（朝）",
+      "who": ["char_elsa", "char_sigvalt", "マーゴット（使用人頭）"],
+      "what": "エルサが家族の借金返済と引き換えに公爵邸へ。契約書に署名。シグヴァルトは指一本触れず「逃げられない」と告げる。翌朝、自分の好物が完璧に揃った朝食に管理の全容を感じ始める。",
+      "where": "ベルンハルト公爵邸・応接間・寝室・食堂",
+      "when": "三月・冬の終わり・物語Day 0〜1",
+      "why": "没落した家族を守るためのエルサの犠牲。シグヴァルトの10年来の執着の成就。",
+      "how": "エルサは恐怖と覚悟を抱えながら公爵邸に踏み込む。シグヴァルトの「触れない」行動が彼女を不気味に揺さぶる。",
+      "emotional_journey": "覚悟（家族のため）→ 恐怖（シグヴァルトの圧倒的な存在感）→ 困惑（触れない・ただ見る）→ 奇妙な「静まり」→ 翌朝の怒り（管理されている）",
+      "foreshadowing_planted": ["foreshadow_001", "foreshadow_002", "foreshadow_003"],
       "foreshadowing_resolved": [],
-      "new_facts_established": [],
-      "continuity_notes": "次章への引き継ぎ事項",
-      "word_count": 0
+      "new_facts_established": [
+        "エルサの食の好みをシグヴァルトが把握済み",
+        "契約書署名完了・家族の安全保障確定",
+        "シグヴァルトは第1話現在エルサに触れていない",
+        "公爵邸の窓には装飾格子（籠の象徴）"
+      ],
+      "continuity_notes": "第2話へ: 公爵邸での日常・管理の全容発覚・温室の発見。エルサの違和感と怒りが徐々に積み重なる。",
+      "word_count": 2800
     }
   ],
 
-  "consistency_violations": [
-    {
-      "id": "violation_001",
-      "discovered_chapter": 0,
-      "description": "矛盾の内容",
-      "conflicting_facts": [],
-      "resolution_status": "open | resolved | accepted_retcon",
-      "resolution_notes": "",
-      "discovered_at": ""
-    }
-  ],
+  "consistency_violations": [],
 
   "world_state": {
-    "current_date_in_story": "",
-    "major_events_occurred": [],
-    "ongoing_conflicts": [],
-    "political_situation": ""
+    "current_date_in_story": "三月上旬・物語Day 1",
+    "major_events_occurred": [
+      "フォン・ローゼン家の借金完済（ベルンハルト家による）",
+      "エルサとシグヴァルトの契約締結"
+    ],
+    "ongoing_conflicts": [
+      "エルサの精神的抵抗 vs シグヴァルトの管理"
+    ],
+    "political_situation": "聖アステリア王国・安定期。ただし王太子の動向が不穏（Arc2への伏線）"
   }
 }
